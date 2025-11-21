@@ -12,7 +12,7 @@ def load_data(path):
 df = load_data("cleaned.csv")
 
 # Streamlit Page Config
-st.set_page_config(page_title="Rack Visuals", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Rack Visuals", page_icon="analysis.png", layout="wide")
 st.title("Road Accidents Severity Dashboard")
 st.write("### Rack Visuals")
 

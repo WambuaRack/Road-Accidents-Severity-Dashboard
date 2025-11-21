@@ -1,4 +1,20 @@
 ### 📄 c:\Users\Administrator\Desktop\Road Accidents Severity\app.py
+*Saved at: 11/21/2025, 8:38:31 PM*
+
+**[REMOVED]**
+```
+(from line ~15)
+st.set_page_config(page_title="Rack Visuals", page_icon="📊", layout="wide")
+
+```
+**[ADDED]**
+```
+15    st.set_page_config(page_title="Rack Visuals", page_icon="analysis.png", layout="wide")
+```
+
+---
+
+### 📄 c:\Users\Administrator\Desktop\Road Accidents Severity\app.py
 *Saved at: 11/21/2025, 8:35:04 PM*
 
 **[REMOVED]**
