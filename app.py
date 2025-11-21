@@ -71,13 +71,13 @@ if selected_cause != "ALL":
 # Metrics with Deltas
 st.write("### Key Metrics")
 total_accidents = filtered.shape[0]
-total_casualties = filtered['Number_of_casualties'].sum()
-total_vehicles = filtered['Number_of_vehicles_involved'].sum()
+total_casualties = int(filtered['Number_of_casualties'].sum())
+total_vehicles = int(filtered['Number_of_vehicles_involved'].sum())
 
 # Calculate deltas compared to overall data
-delta_accidents = total_accidents - df.shape[0]
-delta_casualties = total_casualties - df['Number_of_casualties'].sum()
-delta_vehicles = total_vehicles - df['Number_of_vehicles_involved'].sum()
+delta_accidents = int(total_accidents - df.shape[0])
+delta_casualties = int(total_casualties - df['Number_of_casualties'].sum())
+delta_vehicles = int(total_vehicles - df['Number_of_vehicles_involved'].sum())
 
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Accidents", total_accidents, delta=delta_accidents)

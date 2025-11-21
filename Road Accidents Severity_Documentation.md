@@ -1,4 +1,36 @@
 ### 📄 c:\Users\Administrator\Desktop\Road Accidents Severity\app.py
+*Saved at: 11/21/2025, 8:35:04 PM*
+
+**[REMOVED]**
+```
+(from line ~74)
+total_casualties = filtered['Number_of_casualties'].sum()
+total_vehicles = filtered['Number_of_vehicles_involved'].sum()
+
+```
+**[ADDED]**
+```
+74    total_casualties = int(filtered['Number_of_casualties'].sum())
+75    total_vehicles = int(filtered['Number_of_vehicles_involved'].sum())
+```
+**[REMOVED]**
+```
+(from line ~78)
+delta_accidents = total_accidents - df.shape[0]
+delta_casualties = total_casualties - df['Number_of_casualties'].sum()
+delta_vehicles = total_vehicles - df['Number_of_vehicles_involved'].sum()
+
+```
+**[ADDED]**
+```
+78    delta_accidents = int(total_accidents - df.shape[0])
+79    delta_casualties = int(total_casualties - df['Number_of_casualties'].sum())
+80    delta_vehicles = int(total_vehicles - df['Number_of_vehicles_involved'].sum())
+```
+
+---
+
+### 📄 c:\Users\Administrator\Desktop\Road Accidents Severity\app.py
 *Saved at: 11/21/2025, 8:33:29 PM*
 
 **[ADDED]**
